@@ -1,15 +1,15 @@
-public class For1 extends Thread{
+public class For2 extends Thread{
     public void run(){
-        int x=0;
+        int y=0;
         for (int i = 0; i < 50; i++) {
-            x=x+2;
-            System.out.println("Executando For1");
+            y=y+3;
+            System.out.println("Executando For2");
             try{
                 Thread.sleep(100);
             }catch(Exception ex){
                 System.out.println(ex.getMessage());
             }
-            System.out.println("Valor Final de x: "+x);
+            System.out.println("Valor Final de y: "+y);
         }
     }
 }
